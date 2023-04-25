@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.runs/impl_1/UART.tcl"
+  variable script "C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.runs/impl_1/UART.tcl"
   variable category "vivado_impl"
 }
 
@@ -129,15 +129,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.xpr [current_project]
-  set_property ip_output_repo C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.xpr [current_project]
+  set_property ip_output_repo C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.runs/synth_1/UART.dcp
+  add_files -quiet C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.runs/synth_1/UART.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.srcs/constrs_1/new/nexys a7-50t.xdc}}
+  read_xdc {{C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.srcs/constrs_1/new/nexys a7-50t.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

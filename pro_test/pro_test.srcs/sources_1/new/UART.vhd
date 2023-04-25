@@ -39,7 +39,9 @@ entity UART is
     BTNC      : in    std_logic;
     
     RXIN : out std_logic;
-    TXOUT : in std_logic
+    TXOUT : in std_logic;
+    
+     ARR : out std_logic_vector(7 downto 0)
     -- LED       : out   std_logic_vector(15 downto 0) -- Bit reciever LED-information
     );
 end UART;
@@ -67,6 +69,7 @@ begin
             rst => BTNC,
             rx_tx_switch => SW(0),
             baud_switches => SW(12 downto 10),
-            data_bit => TXOUT
+            data_bit => TXOUT,
+             led_bytes => ARR
             );
 end Behavioral;

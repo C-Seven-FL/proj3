@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1682362738">
+<GenRun Id="synth_1" LaunchPart="xc7a50ticsg324-1L" LaunchTime="1682401280">
   <File Type="PA-TCL" Name="UART.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="UART_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="UART_reports.tcl"/>
@@ -13,7 +13,7 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/baud.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../nexys/D_Project/uart1/uart1.srcs/sources_1/new/baud.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../nexys/D_Project/uart1/uart1.srcs/sources_1/new/baud.vhd"/>
         <Attr Name="ImportTime" Val="1682346871"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -21,7 +21,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Nex_Reciever.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../nexys/D_Project/uart1/uart1.srcs/sources_1/new/Nex_Reciever.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../nexys/D_Project/uart1/uart1.srcs/sources_1/new/Nex_Reciever.vhd"/>
         <Attr Name="ImportTime" Val="1682347363"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -35,7 +35,7 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/UART.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../nexys/D_Project/uart1/uart1.srcs/sources_1/new/UART.vhd"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../nexys/D_Project/uart1/uart1.srcs/sources_1/new/UART.vhd"/>
         <Attr Name="ImportTime" Val="1681782982"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -50,7 +50,7 @@
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/nexys a7-50t.xdc">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../nexys/D_Project/uart1/uart1.srcs/constrs_1/new/nexys a7-50t.xdc"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../nexys/D_Project/uart1/uart1.srcs/constrs_1/new/nexys a7-50t.xdc"/>
         <Attr Name="ImportTime" Val="1681783488"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

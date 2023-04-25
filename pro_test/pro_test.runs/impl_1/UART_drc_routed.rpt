@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Apr 24 21:00:11 2023
+| Date         : Tue Apr 25 07:42:33 2023
 | Host         : DESKTOP-RAOGKPH running 64-bit major release  (build 9200)
 | Command      : report_drc -file UART_drc_routed.rpt -pb UART_drc_routed.pb -rpx UART_drc_routed.rpx
 | Design       : UART
@@ -24,11 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
+             Violations found: 12
 +----------+----------+-----------------------------------------------------+------------+
 | Rule     | Severity | Description                                         | Violations |
 +----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 11         |
 +----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -44,6 +45,61 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net transmitter/clk_bits_reg[4]_i_2_n_0 is a gated clock net sourced by a combinational pin transmitter/clk_bits_reg[4]_i_2/O, cell transmitter/clk_bits_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net transmitter/d_byte_reg[0]_i_1_n_0 is a gated clock net sourced by a combinational pin transmitter/d_byte_reg[0]_i_1/O, cell transmitter/d_byte_reg[0]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net transmitter/d_byte_reg[1]_i_1_n_0 is a gated clock net sourced by a combinational pin transmitter/d_byte_reg[1]_i_1/O, cell transmitter/d_byte_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net transmitter/d_byte_reg[2]_i_1_n_0 is a gated clock net sourced by a combinational pin transmitter/d_byte_reg[2]_i_1/O, cell transmitter/d_byte_reg[2]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net transmitter/d_byte_reg[3]_i_1_n_0 is a gated clock net sourced by a combinational pin transmitter/d_byte_reg[3]_i_1/O, cell transmitter/d_byte_reg[3]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net transmitter/d_byte_reg[4]_i_1_n_0 is a gated clock net sourced by a combinational pin transmitter/d_byte_reg[4]_i_1/O, cell transmitter/d_byte_reg[4]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net transmitter/d_byte_reg[5]_i_1_n_0 is a gated clock net sourced by a combinational pin transmitter/d_byte_reg[5]_i_1/O, cell transmitter/d_byte_reg[5]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net transmitter/d_byte_reg[6]_i_1_n_0 is a gated clock net sourced by a combinational pin transmitter/d_byte_reg[6]_i_1/O, cell transmitter/d_byte_reg[6]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net transmitter/d_byte_reg[7]_i_1_n_0 is a gated clock net sourced by a combinational pin transmitter/d_byte_reg[7]_i_1/O, cell transmitter/d_byte_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net transmitter/data_busy_reg_i_2_n_0 is a gated clock net sourced by a combinational pin transmitter/data_busy_reg_i_2/O, cell transmitter/data_busy_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net transmitter/led_bytes_reg[7]_i_1_n_0 is a gated clock net sourced by a combinational pin transmitter/led_bytes_reg[7]_i_1/O, cell transmitter/led_bytes_reg[7]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

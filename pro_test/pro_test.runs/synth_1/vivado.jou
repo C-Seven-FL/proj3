@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Apr 24 20:59:00 2023
-# Process ID: 12964
-# Current directory: C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.runs/synth_1
+# Start of session at: Tue Apr 25 07:41:22 2023
+# Process ID: 3404
+# Current directory: C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.runs/synth_1
 # Command line: vivado.exe -log UART.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source UART.tcl
-# Log file: C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.runs/synth_1/UART.vds
-# Journal file: C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.runs/synth_1\vivado.jou
+# Log file: C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.runs/synth_1/UART.vds
+# Journal file: C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source UART.tcl -notrace

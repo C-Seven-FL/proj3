@@ -38,7 +38,7 @@ entity Nex_Transmitter is
         
         data_bit : in std_logic;
         
-        -- led_bytes : out std_logic_vector(7 downto 0);
+          led_bytes : out std_logic_vector(7 downto 0);
         
         rx_tx_switch : in std_logic;
        
@@ -71,7 +71,7 @@ begin
             );
 
 
-    transmitter : process(data_bit) is
+    inside : process(data_bit) is
     begin
                 if (rx_tx_switch = '0') then
                 
@@ -89,9 +89,15 @@ begin
                             parity <= d_byte(0) xor d_byte(1) xor d_byte(2) xor d_byte(3) xor d_byte(4) xor d_byte(5) xor d_byte(6) xor d_byte(7);
                         elsif (clk_bits = 9) then
                             end_bit <= '1';
+                            led_bytes <= d_byte;
                         end if;
                         
                         clk_bits <= clk_bits + 1;
+                    
+                        if (clk_bits = 10) then
+                            clk_bits <= 0;
+                            data_busy <= '0';
+                        end if;
                         
                     end if;
                 else
@@ -101,7 +107,10 @@ begin
                     end_bit <= '0';
                 end if;
                 
-     end process transmitter;
+     end process inside;
                     
+                   
+                        
+                
 
 end Behavioral;

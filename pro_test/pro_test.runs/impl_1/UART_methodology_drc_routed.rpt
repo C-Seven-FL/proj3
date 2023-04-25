@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Mon Apr 24 21:00:11 2023
+| Date         : Tue Apr 25 07:42:33 2023
 | Host         : DESKTOP-RAOGKPH running 64-bit major release  (build 9200)
 | Command      : report_methodology -file UART_methodology_drc_routed.rpt -pb UART_methodology_drc_routed.pb -rpx UART_methodology_drc_routed.rpx
 | Design       : UART
@@ -23,11 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 15
+             Violations found: 37
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | TIMING-18 | Warning  | Missing input or output delay | 15         |
+| TIMING-20 | Warning  | Non-clocked latch             | 22         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -105,6 +106,116 @@ Related violations: <none>
 TIMING-18#15 Warning
 Missing input or output delay  
 An output delay is missing on RXIN relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch transmitter/clk_bits_reg[0] cannot be properly analyzed as its control pin transmitter/clk_bits_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch transmitter/clk_bits_reg[1] cannot be properly analyzed as its control pin transmitter/clk_bits_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch transmitter/clk_bits_reg[2] cannot be properly analyzed as its control pin transmitter/clk_bits_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch transmitter/clk_bits_reg[3] cannot be properly analyzed as its control pin transmitter/clk_bits_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch transmitter/clk_bits_reg[4] cannot be properly analyzed as its control pin transmitter/clk_bits_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch transmitter/d_byte_reg[0] cannot be properly analyzed as its control pin transmitter/d_byte_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch transmitter/d_byte_reg[1] cannot be properly analyzed as its control pin transmitter/d_byte_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch transmitter/d_byte_reg[2] cannot be properly analyzed as its control pin transmitter/d_byte_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch transmitter/d_byte_reg[3] cannot be properly analyzed as its control pin transmitter/d_byte_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch transmitter/d_byte_reg[4] cannot be properly analyzed as its control pin transmitter/d_byte_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch transmitter/d_byte_reg[5] cannot be properly analyzed as its control pin transmitter/d_byte_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch transmitter/d_byte_reg[6] cannot be properly analyzed as its control pin transmitter/d_byte_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch transmitter/d_byte_reg[7] cannot be properly analyzed as its control pin transmitter/d_byte_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch transmitter/data_busy_reg cannot be properly analyzed as its control pin transmitter/data_busy_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch transmitter/led_bytes_reg[0] cannot be properly analyzed as its control pin transmitter/led_bytes_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch transmitter/led_bytes_reg[1] cannot be properly analyzed as its control pin transmitter/led_bytes_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch transmitter/led_bytes_reg[2] cannot be properly analyzed as its control pin transmitter/led_bytes_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch transmitter/led_bytes_reg[3] cannot be properly analyzed as its control pin transmitter/led_bytes_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch transmitter/led_bytes_reg[4] cannot be properly analyzed as its control pin transmitter/led_bytes_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch transmitter/led_bytes_reg[5] cannot be properly analyzed as its control pin transmitter/led_bytes_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch transmitter/led_bytes_reg[6] cannot be properly analyzed as its control pin transmitter/led_bytes_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch transmitter/led_bytes_reg[7] cannot be properly analyzed as its control pin transmitter/led_bytes_reg[7]/G is not reached by a timing clock
 Related violations: <none>
 
 

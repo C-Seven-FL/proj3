@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.runs/synth_1/UART.tcl"
+  variable script "C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.runs/synth_1/UART.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,19 +77,19 @@ create_project -in_memory -part xc7a50ticsg324-1L
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.cache/wt [current_project]
-set_property parent.project_path C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.cache/wt [current_project]
+set_property parent.project_path C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.srcs/sources_1/new/baud.vhd
-  C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.srcs/sources_1/new/Nex_Reciever.vhd
-  C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.srcs/sources_1/new/Nex_Transmitter.vhd
-  C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.srcs/sources_1/new/UART.vhd
+  C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.srcs/sources_1/new/baud.vhd
+  C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.srcs/sources_1/new/Nex_Reciever.vhd
+  C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.srcs/sources_1/new/Nex_Transmitter.vhd
+  C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.srcs/sources_1/new/UART.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -100,8 +100,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.srcs/constrs_1/new/nexys a7-50t.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.srcs/constrs_1/new/nexys a7-50t.xdc}}]
+read_xdc {{C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.srcs/constrs_1/new/nexys a7-50t.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.srcs/constrs_1/new/nexys a7-50t.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

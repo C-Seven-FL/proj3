@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Aquaton/Desktop/ASI/pro_test/pro_test.runs/impl_1'
+HD_PWD='C:/Users/Aquaton/Desktop/scate/proj3/pro_test/pro_test.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
